@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var primeiraFuncao = function() {
+            document.write("<br><br>Roda primeira instrução da primeira função - chama 2º função <br><br>");
+            segundaFuncao();
+            document.write("<br><br>Roda segunda instrução da primeira função - Finaliza 1º função<br><br>");
+        };
+        var segundaFuncao = function() {
+            document.write("<br><br>Roda primeira instrução da segunda função - chama 3º função<br><br>");
+            terceiraFuncao();
+            document.write("<br><br>Roda segunda instrução da segunda função - Finaliza 2º função<br><br>");
+        };
+        var terceiraFuncao = function() {
+            document.write("<br><br>Roda terceira função - Finaliza 3º função<br><br>");
+        };
+        primeiraFuncao();
+        </script>
+    
+</body>
+</html>

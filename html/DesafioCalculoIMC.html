@@ -19,12 +19,41 @@
             e depois utilizarmos para dividir o peso.
         <br>var imc = peso / (altura * altura);
     </h4>
+<!-- Ver.1
     <script>
          var peso = 75;
          var altura = 1.75;
          imc = peso / (altura * altura);
          document.write("<br><h2> SEU IMC É : "+imc.toFixed(2)+"</h2>")
+    </script> 
+-->
+<!--Ver.2 
+    <script>
+        var peso = 75;
+        var altura = 1.75;
+        calculoIMC = function(){
+            imc = peso / (altura * altura);
+            document.write("<br><h2> ver2: SEU IMC É : "+imc.toFixed(2)+"</h2>")
+            return
+        }
+        calculoIMC(peso, altura)
+
     </script>
-    
+-->
+<!--Ver.3-->
+    <script>
+        calculoIMC = function(){
+            imc = peso / (altura * altura);
+            document.write("<br><h2> ver2: SEU peso é "+ peso +
+                " sua altura é "+ altura + " e seu IMC É : "+imc.toFixed(2)+"</h2>")
+            return
+        }
+
+        var peso = prompt("Qual é o seu peso?");
+        var altura = prompt("Qual é a sua altura?");
+
+        calculoIMC(peso, altura)
+
+    </script>
 </body>
 </html>

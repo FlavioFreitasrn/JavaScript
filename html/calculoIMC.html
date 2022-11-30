@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+</head>
+<body>
+    <h1>CALCULO DO IMC</h1>
+    <h4>
+        <br>Índice de Massa Corporal, o IMC, é um indicador do grau de obesidade de uma
+            pessoa. 
+        <br>Pode ser uma primeira forma de ter um sinal de que alguém está muito
+            gordo ou muito magro.
+        <br>A fórmula do IMC é simples: peso dividido pelo quadrado
+            da altura.
+        <br>Para calcular o quadrado da altura basta multiplicarmos esse valor por ele mesmo,
+            e depois utilizarmos para dividir o peso.
+        <br>var imc = peso / (altura * altura);
+    </h4>
+    <script>
+         var peso = 75;
+         var altura = 1.75;
+         imc = peso / (altura * altura);
+         document.write("<br><h2> SEU IMC É : "+imc.toFixed(2)+"</h2>")
+    </script>
+    
+</body>
+</html>

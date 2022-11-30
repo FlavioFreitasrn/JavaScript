@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        pulaLinha = function (){
+            document.write("<br>")
+        }
+
+        function janelaPop(){
+            alert("Alerta com JavaScript! - Pop-up");
+        }
+               
+        var exibeMsg = function(msg, msgPeloConsole) {
+            document.write(msg);
+            pulaLinha();
+            document.write("Pulouuuu");
+            console.log(msgPeloConsole)
+            };
+        
+                
+        var msg = "Testando o function Pula linha"
+        var msgPeloConsole = "Msg exibida no console" 
+        //document.write(msg);
+        //pulaLinha();
+        //document.write("Pulouuuu");
+        
+        exibeMsg(msg, msgPeloConsole);
+        janelaPop();
+
+
+        
+    </script>
+</body>
+</html>

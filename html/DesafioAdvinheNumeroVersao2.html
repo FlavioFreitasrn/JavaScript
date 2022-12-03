@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML -->
+    <input type="text" id="numeroDigitado" value="Escolha um numero de 0 a 100"/>
+    <br>
+    <input type="submit" id="testaEscolha" value="Testando o numero!" />
+
+    <!--JAVASCRIPT  -->
+    <script>
+        //variavel
+        //var segredo = 8;
+        var segredo = Math.random().toFixed(2) * 100;
+        var cont =0; 
+        console.log(segredo);
+        //Variavel "numeroDigitado recebe o texto digitado no elemento do html com id=numeroDigitado"
+        var numeroDigitado = document.getElementById("numeroDigitado");
+        var botaotestaEscolha = document.getElementById("testaEscolha");
+        //funções
+        //Cria uma funcao que aciona a caixa de alerta imprimindo a variavel numeroDigitado
+        botaoClicado = function() {
+            cont+=1;
+            if(segredo == numeroDigitado.value) {
+                alert("Parabéns! Você acertou o número secreto");
+            } else {
+                if (segredo > numeroDigitado.value) {
+                    alert("Infelizmente você errou! o numero digitado esta abaixo do esperado. Você testou "+ cont +" vezes");
+                    
+                } else{
+                    alert("Infelizmente você errou! o numero digitado esta acima do esperado. Você testou "+ cont +" vezes");
+                }
+                //alert("Você testou "+ cont +" vezes");
+            }
+            
+        };
+    
+        botaotestaEscolha.onclick = botaoClicado;
+        
+    </script>
+    
+</body>
+</html>

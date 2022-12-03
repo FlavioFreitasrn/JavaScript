@@ -44,9 +44,21 @@
     <script>
         calculoIMC = function(){
             imc = peso / (altura * altura);
-            document.write("<br><h2> ver2: SEU peso é "+ peso +
-                " sua altura é "+ altura + " e seu IMC É : "+imc.toFixed(2)+"</h2>")
-            return
+            if (imc>=18.5 && imc<= 35){
+                document.write("<br><h2> Peso: "+ peso +
+                    "<br>Altura: "+ altura +
+                    "<br>IMC: "+imc.toFixed(2)+"</h2>" +
+                    "<h1>IMC DENTRO DOS LIMITES<h1>");
+                
+            } else {
+                document.write("<br><h2> Peso: "+ peso +
+                    "<br>Altura: "+ altura +
+                    "<br>IMC: "+imc.toFixed(2)+"</h2>" +
+                    "<h1>IMC FORA DOS LIMITES<h1>");
+                    //alert(" CUIDADO!!!!")
+            }
+
+             return
         }
 
         var peso = prompt("Qual é o seu peso?");
